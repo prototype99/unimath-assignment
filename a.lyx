@@ -8,6 +8,7 @@
 \begin_preamble
 
 \renewcommand\thesubsection{\thesection.\alph{subsection}}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -269,15 +270,212 @@ An individual at random...
 \end_layout
 
 \begin_layout Subsubsection
-Alcoholic or depressed
+Is alcoholic or depressed
+\end_layout
+
+\begin_layout Standard
+P=
+\begin_inset Formula $\frac{alcoholictotal}{grandtotal}$
+\end_inset
+
++
+\begin_inset Formula $\frac{depressedtotal}{grandtotal}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{75}{182}$
+\end_inset
+
++
+\begin_inset Formula $\frac{80}{182}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{155}{182}$
+\end_inset
+
+=0.8516483
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Is-alcoholic-or"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
-Alcoholic given depressed
+Is alcoholic and depressed
+\end_layout
+
+\begin_layout Standard
+P=
+\begin_inset Formula $\frac{alcoholictotal}{grandtotal}$
+\end_inset
+
+.
+\begin_inset Formula $\frac{depressedtotal}{grandtotal}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+P=
+\begin_inset Formula $\frac{75}{182}$
+\end_inset
+
+.
+\begin_inset Formula $\frac{80}{182}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+P=
+\begin_inset Formula $\frac{6000}{33124}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+P
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+No level of rounding was specified
+\end_layout
+
+\end_inset
+
+=0.181137543774906412269049631686994324356961719599082236444873807511170148532785
+89542325806062069798333534597270861007124743388479652215915952179688443424707160
+97089723463349836976210602584228957855331481705108078734452360825987199613573239
+94686632049269411906774544137181499818862456225093587730950368313005675643038280
+40091776355512619248882985146721410457674193937930201666465402729138992875256611
+52034778408404782031155657529283902910276536650163023789397415771042144668518294
+891921265547639174012800386426760053133679507305880932254558628185
 \end_layout
 
 \begin_layout Subsubsection
-Is alcoholic and depressed independent
+Is alcoholic and depressed independently
+\end_layout
+
+\begin_layout Standard
+Yes, this is proven by 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Is-alcoholic-or"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Additional probability calculations
+\end_layout
+
+\begin_layout Standard
+Drug user: 0.05
+\begin_inset Newline newline
+\end_inset
+
+True positive test: 0.966
+\begin_inset Newline newline
+\end_inset
+
+False positive test: 0.042
+\end_layout
+
+\begin_layout Subsection
+Positive test probability
+\end_layout
+
+\begin_layout Standard
+P=drug user 
+\begin_inset Formula $\times$
+\end_inset
+
+ true positive test + not drug user 
+\begin_inset Formula $\times$
+\end_inset
+
+ false positive test
+\begin_inset Newline newline
+\end_inset
+
+P=0.05 
+\begin_inset Formula $\times$
+\end_inset
+
+ 0.966 + (1-0.05) 
+\begin_inset Formula $\times$
+\end_inset
+
+ 0.042
+\begin_inset Newline newline
+\end_inset
+
+P=0.05 
+\begin_inset Formula $\times$
+\end_inset
+
+ 0.966 + 0.95 
+\begin_inset Formula $\times$
+\end_inset
+
+ 0.042
+\begin_inset Newline newline
+\end_inset
+
+P=0.0483 + 0.0399
+\begin_inset Newline newline
+\end_inset
+
+P=0.0882
+\end_layout
+
+\begin_layout Subsection
+Drug user and positive test
+\end_layout
+
+\begin_layout Standard
+P=drug user 
+\begin_inset Formula $\times$
+\end_inset
+
+ positive test=0.05 
+\begin_inset Formula $\times$
+\end_inset
+
+ 0.0882=0.00441
+\end_layout
+
+\begin_layout Subsection
+Not drug user and negative test
+\end_layout
+
+\begin_layout Standard
+P=not drug user 
+\begin_inset Formula $\times$
+\end_inset
+
+ negative test=0.95 
+\begin_inset Formula $\times$
+\end_inset
+
+ (1-0.0882)=0.86621
+\end_layout
+
+\begin_layout Section
+Wine scenario
 \end_layout
 
 \end_body
