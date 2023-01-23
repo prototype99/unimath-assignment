@@ -166,7 +166,7 @@ Depressed
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+25
 \end_layout
 
 \end_inset
@@ -195,7 +195,7 @@ Not depressed
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+20
 \end_layout
 
 \end_inset
@@ -204,7 +204,7 @@ Not depressed
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+82
 \end_layout
 
 \end_inset
@@ -213,7 +213,7 @@ Not depressed
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+102
 \end_layout
 
 \end_inset
@@ -242,7 +242,7 @@ Total
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+107
 \end_layout
 
 \end_inset
@@ -262,6 +262,22 @@ Total
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+An individual at random...
+\end_layout
+
+\begin_layout Subsubsection
+Alcoholic or depressed
+\end_layout
+
+\begin_layout Subsubsection
+Alcoholic given depressed
+\end_layout
+
+\begin_layout Subsubsection
+Is alcoholic and depressed independent
 \end_layout
 
 \end_body
