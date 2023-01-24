@@ -653,5 +653,139 @@ Poisson distribution scales evenly, therefore mean rate is 0.6
 P(X=1) = P(X ≤ 1) − P(X ≤ 0) = 0.6626 − 0.3012 = 0.3614
 \end_layout
 
+\begin_layout Section
+Statistics
+\end_layout
+
+\begin_layout Subsection
+Gender/age analysis
+\end_layout
+
+\begin_layout Subsubsection
+Code
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=R"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+data <- read.csv('./poll84.csv')
+\end_layout
+
+\begin_layout Plain Layout
+
+dataMale <- subset(data, female == 0)
+\end_layout
+
+\begin_layout Plain Layout
+
+dataMaleAges=dataMale$age
+\end_layout
+
+\begin_layout Plain Layout
+
+sd(dataMaleAges)
+\end_layout
+
+\begin_layout Plain Layout
+
+mean(dataMaleAges)
+\end_layout
+
+\begin_layout Plain Layout
+
+dataFemale <- subset(data, female == 1)
+\end_layout
+
+\begin_layout Plain Layout
+
+dataFemaleAges=dataFemale$age
+\end_layout
+
+\begin_layout Plain Layout
+
+sd(dataFemaleAges)
+\end_layout
+
+\begin_layout Plain Layout
+
+mean(dataFemaleAges)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Output
+\end_layout
+
+\begin_layout Standard
+> data <- read.csv('./poll84.csv')
+\begin_inset Newline newline
+\end_inset
+
+> dataMale <- subset(data, female == 0)
+\begin_inset Newline newline
+\end_inset
+
+> dataMaleAges=dataMale$age
+\begin_inset Newline newline
+\end_inset
+
+> sd(dataMaleAges)
+\begin_inset Newline newline
+\end_inset
+
+[1] 15.86522
+\begin_inset Newline newline
+\end_inset
+
+> mean(dataMaleAges)
+\begin_inset Newline newline
+\end_inset
+
+[1] 44.43253
+\begin_inset Newline newline
+\end_inset
+
+> dataFemale <- subset(data, female == 1)
+\begin_inset Newline newline
+\end_inset
+
+> dataFemaleAges=dataFemale$age
+\begin_inset Newline newline
+\end_inset
+
+> sd(dataFemaleAges)
+\begin_inset Newline newline
+\end_inset
+
+[1] 17.07576
+\begin_inset Newline newline
+\end_inset
+
+> mean(dataFemaleAges)
+\begin_inset Newline newline
+\end_inset
+
+[1] 44.88323
+\end_layout
+
+\begin_layout Subsubsection
+Comments
+\end_layout
+
+\begin_layout Standard
+Surprisingly mean age is roughly the same per gender.
+ Curiously, females have a wider standard deviance, perhaps due to a larger
+ number of rows.
+\end_layout
+
 \end_body
 \end_document
