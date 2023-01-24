@@ -632,7 +632,25 @@ P(2 ≤ X ≤ 3) = P(X ≤ 3) − P(X ≤ 2 − 1) = P(X ≤ 3) − P(X ≤ 1) =
 \end_layout
 
 \begin_layout Subsection
-one strike in two months
+One strike in two months
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Poisson distribution scales evenly, therefore mean rate is 0.6 
+\begin_inset Formula $\times$
+\end_inset
+
+ 2, or 1.2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(X=1) = P(X ≤ 1) − P(X ≤ 0) = 0.6626 − 0.3012 = 0.3614
 \end_layout
 
 \end_body
