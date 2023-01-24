@@ -475,7 +475,164 @@ P=not drug user
 \end_layout
 
 \begin_layout Section
-Wine scenario
+Normal distributions
+\end_layout
+
+\begin_layout Standard
+Mean: 34.06
+\begin_inset Newline newline
+\end_inset
+
+Standard deviation: 4
+\end_layout
+
+\begin_layout Subsection
+Chance a randomly selected item's price is...
+\end_layout
+
+\begin_layout Subsubsection
+P(Z<34.33)
+\end_layout
+
+\begin_layout Standard
+Z=1-P(Z>
+\begin_inset Formula $\frac{hypothesisprice-mean}{standarddeviation}$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+Z=1-P(Z>
+\begin_inset Formula $\frac{34.33-34.06}{4}$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+Z=1-P(Z>0.0675)
+\begin_inset Newline newline
+\end_inset
+
+Z=
+\begin_inset Formula $\frac{1-P(Z>0.675)}{10}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z=
+\begin_inset Formula $\frac{1-0.24985}{10}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Z=0.075015
+\end_layout
+
+\begin_layout Subsubsection
+P(32.06<Z<36.06)
+\end_layout
+
+\begin_layout Standard
+P(
+\begin_inset Formula $\frac{32.06-34.06}{4}$
+\end_inset
+
+<Z<
+\begin_inset Formula $\frac{36.06-34.06}{4}$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+P(
+\begin_inset Formula $\frac{-2}{4}$
+\end_inset
+
+<Z<
+\begin_inset Formula $\frac{2}{4}$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+P(-0.5<Z<0.5)
+\begin_inset Newline newline
+\end_inset
+
+P(Z>-0.5) - P(Z>0.5)
+\begin_inset Newline newline
+\end_inset
+
+(1-P(Z>0.5)) - P(Z>0.5)
+\begin_inset Newline newline
+\end_inset
+
+(1-0.3085) - 0.3085
+\begin_inset Newline newline
+\end_inset
+
+0.383
+\end_layout
+
+\begin_layout Subsection
+Inverse normal distribution: +0.04%
+\end_layout
+
+\begin_layout Standard
+X=standard deviation 
+\begin_inset Formula $\times$
+\end_inset
+
+ P(Z>0.04) + mean = 4 
+\begin_inset Formula $\times$
+\end_inset
+
+ 1.7507 + 34.06 = 41.0628
+\end_layout
+
+\begin_layout Section
+Poisson distribution
+\end_layout
+
+\begin_layout Standard
+0.6 meteorite shower chance per month
+\end_layout
+
+\begin_layout Subsection
+P(X = 0)
+\end_layout
+
+\begin_layout Standard
+P(X = 0) = P(X ≤ 0) = 0.5488
+\end_layout
+
+\begin_layout Subsection
+P(X ⩾ 2)
+\end_layout
+
+\begin_layout Standard
+P(X ⩾ 2) = 1 − P(X ≤ 1) = 1 - 0.8781 = 0.1219
+\end_layout
+
+\begin_layout Subsection
+P(2 ≤ X ≤ 3)
+\end_layout
+
+\begin_layout Standard
+P(2 ≤ X ≤ 3) = P(X ≤ 3) − P(X ≤ 2 − 1) = P(X ≤ 3) − P(X ≤ 1) = 0.9966 − 0.8781
+ = 0.1185
+\end_layout
+
+\begin_layout Subsection
+one strike in two months
 \end_layout
 
 \end_body
